@@ -19,6 +19,7 @@ import AdminOffers from "./pages/AdminOffers";
 import AdminCustomers from "./pages/AdminCustomers";
 import AdminOrders from "./pages/AdminOrders";
 import AdminLayout from "./components/AdminLayout";
+import About from "./pages/About";
 
 // Layout component for user-facing pages that includes Navbar and Footer
 const UserLayout = ({ children }) => {
@@ -42,11 +43,12 @@ function App() {
               {/* User Routes with Navbar and Footer */}
               <Route path="/" element={<UserLayout><Home /></UserLayout>} />
               <Route path="/products" element={<UserLayout><Products /></UserLayout>} />
-              <Route path="/login" element={<UserLayout><Login /></UserLayout>} />
-              <Route path="/signup" element={<UserLayout><Signup /></UserLayout>} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
               <Route path="/cart" element={<UserLayout><Cart /></UserLayout>} />
               <Route path="/checkout" element={<UserLayout><Checkout /></UserLayout>} />
               <Route path="/wishlist" element={<UserLayout><Wishlist /></UserLayout>} />
+              <Route path="/about" element={<UserLayout><About /></UserLayout>} />
 
               {/* Admin Routes with AdminLayout (Sidebar) */}
               <Route path="/admin" element={<AdminLayout />}>

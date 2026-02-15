@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center ml-50 center gap-8 text-sm text-gray-700">
               <Link className="hover:text-[#0E3A48]" to="/">Home</Link>
               <Link className="hover:text-[#0E3A48]" to="/products">Products</Link>
-              <Link className="hover:text-[#0E3A48]" to="/gifting">Gifting</Link>
+              {/* <Link className="hover:text-[#0E3A48]" to="/gifting">Gifting</Link> */}
               <Link className="hover:text-[#0E3A48]" to="/about">About</Link>
             </div>
 
@@ -90,7 +90,7 @@ const Navbar = () => {
           <div className="md:hidden bg-white border-t px-6 py-4 space-y-4 text-sm">
             <Link onClick={() => setMenuOpen(false)} to="/" className="block">Home</Link>
             <Link onClick={() => setMenuOpen(false)} to="/products" className="block">Products</Link>
-            <Link onClick={() => setMenuOpen(false)} to="/gifting" className="block">Gifting</Link>
+            {/* <Link onClick={() => setMenuOpen(false)} to="/gifting" className="block">Gifting</Link> */}
             <Link onClick={() => setMenuOpen(false)} to="/about" className="block">About</Link>
             <Link onClick={() => setMenuOpen(false)} to="/login" className="block">Login</Link>
           </div>
